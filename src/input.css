@@ -28,9 +28,8 @@
     }
 
     input[type="email"] {
-
-        &:invalid + span {
-            display: inline-block !important;
+        &:invalid {
+            & + span { display: inline-block !important; }
         }
     }
 
